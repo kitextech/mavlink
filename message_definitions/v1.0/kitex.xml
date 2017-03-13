@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<mavlink>
+  <include>common.xml</include>
+        <!-- NOTE: If the included file already contains a version tag, remove the version tag here, else uncomment to enable. -->
+	<!--<version>3</version>-->
+	<enums>
+	</enums>
+	<messages>
+		<message id="150" name="KITE_POSITION">
+			<description>This message encodes the target position o.</description>
+			<field type="float" name="c_phi">The position of the center of Rotation while in loop mode with rotation about the Down axis in NED</field>
+      <field type="float" name="c_theta">The position of the center of Rotation while in loop mode. Angle with the horizon</field>
+			<field type="float" name="radius">The radius of the rotation</field>
+		</message>
+	</messages>
+</mavlink>
